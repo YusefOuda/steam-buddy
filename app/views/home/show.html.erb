@@ -3,7 +3,7 @@
 </header>
 <div class="row main-content">
 <h2 class="game-title text"><%= @game.name %></h2>
-<img src="<%= @game.header_image %>" class="game-header">
+<a href="http://store.steampowered.com/app/<%= @game.steam_appid %>" target="_blank"><img src="<%= @game.header_image %>" class="game-header"></a>
 </div>
 <div class="row description-row">
 <a href="steam://checksysreqs/<%= @game.steam_appid %>">
