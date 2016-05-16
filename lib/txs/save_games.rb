@@ -27,6 +27,7 @@ class SaveGames
 
             category_db = Category.find_by(category: cat["description"])
             if category_db.nil?
+              puts "category #{cat['description']} not found"
               category_db = Category.new
               category_db.category = cat["description"]
               category_db.save
@@ -40,6 +41,7 @@ class SaveGames
           game_data["data"]["genres"].each do |genre|
             genre_db = Genre.find_by(genre: genre["description"])
             if genre_db.nil?
+              puts "genre #{genre['description']} not found"
               genre_db = Genre.new
               genre_db.genre = genre["description"]
               genre_db.save
