@@ -1,4 +1,4 @@
-# [Steam Buddy](http://steam-buddy.com) #
+# Steam Buddy #
 ### Summary
 Steam Buddy accesses a Steam user's profile to allow him to select filters before being presented one game recommendation from his library
 ### How it works
