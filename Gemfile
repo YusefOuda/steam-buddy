@@ -9,12 +9,6 @@ group :production do
   gem 'unicorn'
 end
 
-group :development do 
-  gem 'capistrano', '~> 2.15.1'
-  gem 'rvm-capistrano', require: false
-  gem 'capistrano-resque', '~> 0.2.2', require: false
-end
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
@@ -52,4 +46,4 @@ gem 'pusher'
 
 gem 'rack'
 
-ruby "2.2.1"
+ruby "2.3.1"

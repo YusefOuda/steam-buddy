@@ -4,6 +4,7 @@ default: &default
   host: localhost
   username: rails
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  template: template0
 
 development:
   <<: *default
